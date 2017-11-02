@@ -1,0 +1,70 @@
+{
+"id" : "map",
+    "map": {
+        "dragging" : true,
+        "touchZoom" : false,
+        "scrollWheelZoom" : true,
+        "doubleClickZoom" : true,
+        "boxzoom" : true,
+        "trackResize" : true,
+        "worldCopyJump" : true,
+        "closePopupOnClick" : true,
+        "keyboard" : true,
+        "keyboardPanOffset" : 80,
+        "keyboardZoomOffset" : 1,
+        "inertia" : false,
+        "inertiaDeceleration" : 3000,
+        "inertiaMaxSpeed" : 1500,
+        "zoomControl" : true
+    },
+    "tileLayer" : {
+        "url" : "https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYm1nb256YWxlcyIsImEiOiJjaXo3YWt0NzQwMDh6MzJwZHpiN3UwbmF3In0.Y9Ujb7Ov8iBM20R21z1CRw",
+        "opts" : {
+            "minZoom" : 0,
+            "maxZoom" : 15,
+            "errorTileUrl" : "img/error-tile-image.png",
+            "attribution" : "<a target=\"_blank\" href=\"http://www.mapbox.com\">Mapbox</a>",
+            "subdomains" : ["a", "b", "c", "d"],
+            "detectRetina" : true
+        }
+    },
+   "scale" : {
+        "position" : "bottomleft",
+        "maxWidth" : 100,
+        "metric" : true,
+        "imperial" : true,
+        "updateWhenIdle" : false
+    },
+    "control" : {
+        "layers" : {
+            "options" : {
+                "autoZIndex" : true,
+                "collapsed"  : true,
+                "position"   : "topleft"
+            }
+        }
+    },
+    "geojson" : {
+        "cache" : true
+    },
+    "features" : {
+        "popup" : {
+            "maxWidth" : 300,
+            "minWidth" : 250,
+            "maxHeight" : 400,
+            "autoPan" : true,
+            "closeButton" : true,
+            "autoPanPadding" : [5, 5]
+        },
+        "icon" : {
+            "iconSize" : [62, 77],
+            "iconAnchor" : [17, 36],
+            "popupAnchor" : [-1, -32],
+            "shadowSize" : [61, 61],
+            "shadowAnchor" : [16, 43]
+        },
+        "opacity" : 1,
+        "riseOnHover": true,
+        "clickable" : true
+    }
+}
